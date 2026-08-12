@@ -229,9 +229,9 @@
                 </div>
 
                 <div>
-                    <label class="block text-xs font-bold text-slate-700 mb-1.5">Joriy darajangiz yoki bilimingiz</label>
+                    <label class="block text-xs font-bold text-slate-700 mb-1.5">Joriy bilim darajangiz:</label>
                     <div class="grid grid-cols-5 gap-1.5 mb-2">
-                        <button type="button" onclick="setLevel('Boshlang'ich (0 dan)', this)" class="level-btn py-2.5 rounded-xl border border-slate-200 text-xs font-bold text-slate-700 hover:border-blue-600 transition bg-slate-50">Boshlang'ich</button>
+                        <button type="button" onclick="setLevel('Yangi (0 dan)', this)" class="level-btn py-2.5 rounded-xl border border-slate-200 text-xs font-bold text-slate-700 hover:border-blue-600 transition bg-slate-50">Boshlang'ich</button>
                         <button type="button" onclick="setLevel('A1', this)" class="level-btn py-2.5 rounded-xl border border-slate-200 text-xs font-bold text-slate-700 hover:border-blue-600 transition bg-slate-50">A1</button>
                         <button type="button" onclick="setLevel('A2', this)" class="level-btn py-2.5 rounded-xl border border-slate-200 text-xs font-bold text-slate-700 hover:border-blue-600 transition bg-slate-50">A2</button>
                         <button type="button" onclick="setLevel('B1', this)" class="level-btn py-2.5 rounded-xl border border-slate-200 text-xs font-bold text-slate-700 hover:border-blue-600 transition bg-slate-50">B1</button>
@@ -240,7 +240,6 @@
                     <button type="button" onclick="setLevel('C1', this)" class="level-btn w-full py-2.5 rounded-xl border border-slate-200 text-xs font-bold text-slate-700 hover:border-blue-600 transition bg-slate-50">C1 / Mutaxassis</button>
                     <input type="hidden" id="level" required>
                 </div>
-
                 <div>
                     <label class="block text-xs font-bold text-slate-700 mb-1.5">Biz haqimizda qayerdan bildingiz?</label>
                     <select id="source" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-2xl text-sm focus:outline-none focus:border-blue-600 transition text-slate-700">
@@ -274,7 +273,8 @@
            
                 <a href="https://instagram.com/bestway.education" target="_blank" class="hover:text-white">Instagram</a>
                 <a href="https://t.me/SadullayevAQ" target="_blank" class="hover:text-white">Telegram</a>
-                <a href="tel:+998942244955" class="hover:text-white">Aloqa uchun:+998942244955
+               
+               <p>© 2026 BEST WAY EDUCATION CENTER | Samarkand<br>Barcha huquqlar himoyalangan.</p>
                     
                 </a>
             </div>
@@ -295,13 +295,13 @@
         document.getElementById('tgForm').addEventListener('submit', function(e) {
             e.preventDefault();
 
-            const BOT_TOKEN = "8670578499:AAHH3RrxNTn676Re0Dx4rWQZot_lcLD-7aw";
+            const BOT_TOKEN = "8879071939:AAFgf-mSYpwl0OjGw78lSuMOtbG9MG1PTUM";
             const CHAT_ID = "5752808197";
 
             const btn = document.getElementById('submitBtn');
             const msg = document.getElementById('statusMsg');
 
-            btn.innerText = "Yuborilmoqda...";
+            btn.innerText = "Yuborilmoqda kuting...";
             btn.disabled = true;
 
             const text = "📥 Yangi ariza! (Best Way Education Center)\n\n" +
@@ -318,7 +318,7 @@
             img.src = url;
 
             setTimeout(() => {
-                msg.innerText = "✅ Ariza muvaffaqiyatli yuborildi!";
+                msg.innerText = "✅ Ariza muvaffaqiyatli yuborildi,tez orada siz bilan bog'lanamiz!";
                 msg.className = "text-center text-xs font-bold text-green-600 mt-2";
                 document.getElementById('tgForm').reset();
                 document.querySelectorAll('.level-btn').forEach(b => {
